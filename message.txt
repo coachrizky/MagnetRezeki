@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Kuliah WA: Pikiran yang Tepat, Rezeki yang Mengalir</title>
+<meta name="description" content="Kuliah WA 2 Jam — Ubah pola pikir tentang rezeki dengan NLP & Perspektif Islam. Jumat 17 Juli 2026, 20.00 WIB. Biaya sukarela.">
+<style>
+:root{
+  --gold:#C9A84C;
+  --gold-light:#F0D080;
+  --gold-dark:#8A6828;
+  --gold-dim:#3D2E10;
+  --bg:#07080A;
+  --bg2:#0D0F0A;
+  --bg3:#111308;
+  --cream:#F0E8D0;
+  --cream2:#C8B880;
+  --red:#DC2626;
+  --green:#16a34a;
+  --white:#FAFAF8;
+  --muted:#706858;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--cream);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:80px;
+}
+
+/* ── UTILS ─────────────────────────── */
+.gold{color:var(--gold)}
+.cream{color:var(--cream)}
+.muted{color:var(--muted)}
+.red{color:var(--red)}
+.strike{text-decoration:line-through;opacity:.5}
+.center{text-align:center}
+.bold{font-weight:700}
+
+/* ── TOP BAR ─────────────────────────── */
+#topbar{
+  background:var(--red);
+  text-align:center;
+  padding:9px 16px;
+  font-size:12.5px;
+  font-weight:600;
+  color:#fff;
+  letter-spacing:.02em;
+  position:sticky;top:0;z-index:100;
+}
+
+/* ── HERO ─────────────────────────── */
+#hero{
+  background:linear-gradient(175deg,#0D1208 0%,#060608 60%,#0A0C06 100%);
+  padding:32px 20px 28px;
+  border-bottom:1px solid #1e1c10;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--gold-dim);
+  border:1px solid #604820;
+  color:var(--gold);
+  font-size:11px;font-weight:700;letter-spacing:.06em;
+  padding:5px 12px;border-radius:20px;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+.eyebrow span{font-size:14px}
+h1{
+  font-size:clamp(22px,6vw,30px);
+  font-weight:800;
+  line-height:1.2;
+  color:var(--white);
+  margin-bottom:8px;
+}
+h1 em{
+  font-style:normal;
+  color:var(--gold);
+}
+.hero-sub{
+  font-size:14px;
+  color:var(--cream2);
+  margin-bottom:20px;
+  line-height:1.6;
+}
+
+/* countdown */
+.countdown-wrap{
+  background:var(--gold-dim);
+  border:1px solid #604820;
+  border-radius:var(--r);
+  padding:14px 16px;
+  margin-bottom:20px;
+}
+.cd-label{
+  font-size:10px;font-weight:700;letter-spacing:.08em;
+  color:var(--gold);text-transform:uppercase;
+  margin-bottom:10px;text-align:center;
+}
+.cd-boxes{
+  display:flex;gap:8px;justify-content:center;
+}
+.cd-box{
+  flex:1;background:#1a160A;border:1px solid #503810;
+  border-radius:10px;padding:8px 4px;text-align:center;
+  max-width:70px;
+}
+.cd-num{
+  font-size:26px;font-weight:800;
+  color:var(--gold-light);
+  line-height:1;font-variant-numeric:tabular-nums;
+  font-family:Georgia,serif;
+}
+.cd-unit{
+  font-size:9px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em;
+  margin-top:3px;
+}
+.cd-sep{
+  font-size:22px;color:var(--gold);font-weight:700;
+  display:flex;align-items:center;padding-top:4px;
+}
+
+/* event info pills */
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.pill{
+  background:#111208;border:1px solid #252210;
+  border-radius:20px;padding:6px 12px;
+  font-size:12px;color:var(--cream2);
+  display:flex;align-items:center;gap:5px;
+}
+.pill i{font-size:13px}
+
+/* hero CTA */
+.btn-wa{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:16px;border-radius:var(--r);
+  background:var(--gold);
+  color:#0A0800;
+  font-size:16px;font-weight:800;
+  border:none;cursor:pointer;
+  text-decoration:none;
+  transition:filter .15s,transform .1s;
+  letter-spacing:.01em;
+}
+.btn-wa:active{transform:scale(.98);filter:brightness(.9)}
+.btn-wa svg{width:22px;height:22px;flex-shrink:0}
+.btn-sub{
+  font-size:11px;color:var(--muted);
+  text-align:center;margin-top:8px;
+}
+
+/* ── TRUST STRIP ─────────────────────── */
+#trust{
+  background:#0A0C07;
+  border-top:1px solid #1a1c10;
+  border-bottom:1px solid #1a1c10;
+  padding:14px 20px;
+}
+.trust-row{display:flex;justify-content:space-around;gap:12px;flex-wrap:wrap}
+.trust-item{text-align:center;flex:0 0 auto}
+.trust-num{font-size:20px;font-weight:800;color:var(--gold);font-family:Georgia,serif}
+.trust-label{font-size:10px;color:var(--muted);margin-top:2px}
+
+/* ── SECTIONS ─────────────────────────── */
+.sec{padding:28px 20px}
+.sec-eyebrow{
+  font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:10px;
+}
+.sec-title{
+  font-size:20px;font-weight:800;
+  color:var(--white);line-height:1.3;
+  margin-bottom:16px;
+}
+.sec-title em{font-style:normal;color:var(--gold)}
+.sec-body{font-size:14px;color:var(--cream2);line-height:1.7}
+.sec-alt{background:var(--bg2)}
+.sec-alt2{background:var(--bg3)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#302810,transparent);margin:0}
+
+/* ── PAIN CARDS ─────────────────────── */
+.pain-grid{display:grid;gap:10px;margin-top:16px}
+.pain-card{
+  background:#100E06;
+  border:1px solid #252010;
+  border-left:3px solid var(--gold);
+  border-radius:10px;padding:14px 14px 14px 16px;
+  font-size:13px;color:var(--cream2);line-height:1.5;
+}
+.pain-card strong{color:var(--white);display:block;margin-bottom:3px;font-size:13.5px}
+
+/* ── WHAT YOU GET ─────────────────────── */
+.what-list{display:grid;gap:10px;margin-top:16px}
+.what-item{
+  background:#0E100A;
+  border:1px solid #1e2012;
+  border-radius:10px;padding:14px;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.what-icon{
+  width:38px;height:38px;border-radius:10px;
+  background:var(--gold-dim);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;margin-top:1px;
+}
+.what-title{font-size:13.5px;font-weight:700;color:var(--white);margin-bottom:3px}
+.what-body{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* ── SESSION OUTLINE ─────────────────── */
+.session-list{margin-top:16px;display:grid;gap:8px}
+.session{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#0A0C06;border:1px solid #1a1c10;
+  border-radius:10px;padding:12px 14px;
+}
+.session-num{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--gold);
+  color:#0A0800;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:1px;
+}
+.session-time{font-size:10px;color:var(--gold);font-weight:700;margin-bottom:2px}
+.session-title{font-size:13px;font-weight:700;color:var(--white);margin-bottom:2px}
+.session-body{font-size:11.5px;color:var(--muted);line-height:1.5}
+
+/* ── TRAINER ─────────────────────────── */
+.trainer-card{
+  background:#0E100A;
+  border:1px solid #252010;
+  border-radius:var(--r);
+  padding:20px;
+  margin-top:16px;
+  display:flex;gap:16px;align-items:flex-start;
+}
+.trainer-avatar{
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold-dim),#201808);
+  border:2px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;flex-shrink:0;
+}
+.trainer-name{font-size:16px;font-weight:800;color:var(--white)}
+.trainer-cred{font-size:12px;color:var(--gold);margin:3px 0 8px}
+.trainer-bio{font-size:12.5px;color:var(--muted);line-height:1.6}
+.badge-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.badge{
+  background:var(--gold-dim);border:1px solid #504020;
+  color:var(--cream2);font-size:10px;font-weight:600;
+  padding:3px 9px;border-radius:20px;
+}
+
+/* ── TESTIMONY ─────────────────────────── */
+.testi-list{display:grid;gap:10px;margin-top:16px}
+.testi{
+  background:#0A0C06;
+  border:1px solid #1e1c10;
+  border-radius:12px;
+  padding:16px;
+  position:relative;
+}
+.testi::before{
+  content:'"';
+  position:absolute;top:10px;right:14px;
+  font-size:36px;color:var(--gold-dim);font-family:Georgia,serif;
+  line-height:1;
+}
+.testi-text{font-size:13px;color:var(--cream2);line-height:1.6;margin-bottom:10px;font-style:italic}
+.testi-name{font-size:11px;font-weight:700;color:var(--white)}
+.testi-sub{font-size:10px;color:var(--muted)}
+.stars{color:var(--gold);font-size:12px;margin-bottom:8px}
+
+/* ── PRICING ─────────────────────────── */
+#pricing{background:linear-gradient(160deg,#0D1208,#07080A)}
+.price-card{
+  background:#0E100A;
+  border:2px solid var(--gold);
+  border-radius:16px;
+  padding:24px 20px;
+  margin-top:16px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.price-card::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.price-tag{
+  background:var(--gold);
+  color:#0A0800;font-size:11px;font-weight:800;
+  padding:4px 12px;border-radius:20px;
+  display:inline-block;margin-bottom:12px;
+  letter-spacing:.04em;text-transform:uppercase;
+}
+.original-price{
+  font-size:15px;color:var(--muted);
+  margin-bottom:4px;
+}
+.main-price{
+  font-size:42px;font-weight:800;
+  color:var(--gold-light);
+  font-family:Georgia,serif;
+  line-height:1;margin-bottom:4px;
+}
+.price-note{font-size:12px;color:var(--cream2);margin-bottom:18px;line-height:1.5}
+.what-included{
+  background:#0A0C06;border:1px solid #1e1c10;
+  border-radius:10px;padding:14px;text-align:left;
+  margin-bottom:18px;
+}
+.included-item{
+  display:flex;align-items:flex-start;gap:8px;
+  font-size:12.5px;color:var(--cream2);
+  padding:5px 0;
+  border-bottom:1px solid #151310;
+}
+.included-item:last-child{border-bottom:none}
+.included-item::before{content:'✓';color:var(--green);font-weight:800;flex-shrink:0}
+
+/* ── URGENCY BAR ─────────────────────── */
+.urgency{
+  background:#1a0A0A;border:1px solid #3a1010;
+  border-radius:10px;padding:12px 14px;
+  display:flex;align-items:center;gap:10px;
+  margin:16px 0;font-size:13px;color:var(--cream2);
+}
+.urgency-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:var(--red);flex-shrink:0;
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* ── FAQ ─────────────────────────────── */
+.faq-list{margin-top:16px;display:grid;gap:8px}
+.faq-item{
+  background:#0A0C06;border:1px solid #1a1c10;
+  border-radius:10px;overflow:hidden;
+}
+.faq-q{
+  padding:14px 16px;font-size:13px;font-weight:700;
+  color:var(--white);cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:8px;user-select:none;
+}
+.faq-q::after{
+  content:'+';color:var(--gold);font-size:18px;
+  font-weight:400;flex-shrink:0;transition:transform .2s;
+}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{
+  display:none;padding:0 16px 14px;
+  font-size:12.5px;color:var(--muted);line-height:1.6;
+}
+.faq-item.open .faq-a{display:block}
+
+/* ── FINAL CTA ─────────────────────────── */
+#final-cta{
+  padding:32px 20px;
+  background:linear-gradient(160deg,#0D1208,#07080A);
+  text-align:center;
+}
+.final-headline{
+  font-size:22px;font-weight:800;
+  color:var(--white);line-height:1.3;
+  margin-bottom:12px;
+}
+.final-headline em{font-style:normal;color:var(--gold)}
+.final-sub{font-size:13px;color:var(--cream2);margin-bottom:20px;line-height:1.6}
+
+/* ── STICKY BOTTOM ─────────────────────── */
+#sticky{
+  position:fixed;bottom:0;left:0;right:0;
+  background:rgba(7,8,10,.95);
+  border-top:1px solid #252010;
+  padding:12px 16px;
+  z-index:200;
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+.sticky-inner{
+  display:flex;align-items:center;gap:10px;
+  max-width:500px;margin:0 auto;
+}
+.sticky-text{flex:1;min-width:0}
+.sticky-label{font-size:10px;color:var(--muted);margin-bottom:1px}
+.sticky-title{font-size:12px;font-weight:700;color:var(--white);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-btn{
+  background:var(--gold);
+  color:#0A0800;
+  font-size:13px;font-weight:800;
+  padding:11px 18px;border-radius:10px;
+  border:none;cursor:pointer;
+  white-space:nowrap;text-decoration:none;
+  display:flex;align-items:center;gap:6px;
+  flex-shrink:0;
+}
+.sticky-btn svg{width:16px;height:16px}
+
+/* ── AYAT BLOCK ─────────────────────────── */
+.ayat-block{
+  background:#0A0E06;border:1px solid #252010;
+  border-left:3px solid var(--gold);
+  border-radius:0 10px 10px 0;
+  padding:16px;margin:16px 0;
+}
+.ayat-ar{
+  font-size:20px;color:var(--gold-light);
+  text-align:right;line-height:1.8;
+  margin-bottom:8px;font-family:Georgia,serif;
+}
+.ayat-id{font-size:12.5px;color:var(--cream2);font-style:italic;line-height:1.6;margin-bottom:6px}
+.ayat-src{font-size:10.5px;color:var(--muted);font-weight:700}
+
+/* ── WHATSAPP ICON SVG ─────────────────── */
+.wa-svg{fill:#0A0800}
+</style>
+</head>
+<body>
+
+<!-- TOP URGENCY BAR -->
+<div id="topbar">
+  ⚡ Kuota terbatas 100 orang &nbsp;·&nbsp; Jumat 17 Juli · 20.00 WIB &nbsp;·&nbsp; Biaya Sukarela
+</div>
+
+<!-- ══ HERO ══════════════════════════════ -->
+<section id="hero">
+  <div class="eyebrow"><span>💰</span> Kuliah WA Online · Topik 1</div>
+
+  <h1>Rezekimu Nggak Nyangkut di Langit. <em>Nyangkut di Kepalamu.</em></h1>
+
+  <p class="hero-sub">
+    Kuliah WA 2 jam — bongkar pola pikir yang diam-diam memblokir rezeki, dengan pendekatan NLP, Psikologi Kemakmuran, dan nilai-nilai Islam.
+  </p>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-wrap">
+    <div class="cd-label">⏳ Waktu tersisa menuju kelas dimulai</div>
+    <div class="cd-boxes">
+      <div class="cd-box"><div class="cd-num" id="cd-d">00</div><div class="cd-unit">Hari</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><div class="cd-num" id="cd-h">00</div><div class="cd-unit">Jam</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><div class="cd-num" id="cd-m">00</div><div class="cd-unit">Menit</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-unit">Detik</div></div>
+    </div>
+  </div>
+
+  <!-- EVENT INFO -->
+  <div class="pills">
+    <div class="pill">📅 Jumat, 17 Juli 2026</div>
+    <div class="pill">🕗 20.00 WIB – selesai</div>
+    <div class="pill">💬 Via WhatsApp Group</div>
+    <div class="pill">👥 Maks. 100 peserta</div>
+  </div>
+
+  <!-- HERO CTA -->
+  <a href="https://wa.me/6285600014111?text=Halo%20Kak%20Rizky%2C%20saya%20mau%20daftar%20Kuliah%20WA%20Topik%201%20-%20Rezeki%20%26%20Mindset%20tanggal%2017%20Juli%202026%20%F0%9F%99%8F" class="btn-wa" id="hero-cta">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#0A0800"/>
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.962-1.418A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="#0A0800" stroke-width="1.5" fill="none"/>
+    </svg>
+    Daftar Gratis via WhatsApp
+  </a>
+  <p class="btn-sub">Gratis daftar · Bayar seikhlasnya setelah kelas ·&nbsp;Konfirmasi dalam 5 menit</p>
+</section>
+
+<!-- ══ TRUST STRIP ══════════════════════ -->
+<div id="trust">
+  <div class="trust-row">
+    <div class="trust-item"><div class="trust-num">500+</div><div class="trust-label">Alumni Kelas</div></div>
+    <div class="trust-item"><div class="trust-num">4.9★</div><div class="trust-label">Rata-rata Rating</div></div>
+    <div class="trust-item"><div class="trust-num">2 Jam</div><div class="trust-label">Materi Padat</div></div>
+    <div class="trust-item"><div class="trust-num">CT.NNLP</div><div class="trust-label">Trainer Sertifikat</div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══ PAIN SECTION ══════════════════════ -->
+<section class="sec sec-alt">
+  <div class="sec-eyebrow">😤 Apakah ini tentang kamu?</div>
+  <h2 class="sec-title">Sudah sholat, sedekah, doa — tapi rezeki <em>masih segitu-gitu aja.</em></h2>
+  <p class="sec-body">Bukan berarti Allah tidak mendengar. Mungkin ada program di pikiranmu yang secara diam-diam menolak rezeki itu masuk.</p>
+
+  <div class="pain-grid" style="margin-top:18px">
+    <div class="pain-card"><strong>💸 Rezeki terasa stagnan</strong>Sudah kerja keras, sudah berdoa, tapi angkanya tidak bergerak. Ada rasa frustasi yang nggak tahu harus diarahkan ke mana.</div>
+    <div class="pain-card"><strong>🔄 Pola yang terus berulang</strong>Ganti kerja, ganti usaha, ganti lingkungan — tapi kondisi finansial masih sama. Seperti ada yang menghalangi tapi nggak kelihatan.</div>
+    <div class="pain-card"><strong>😓 Tawakkal tapi hasilnya beda</strong>Sudah berikhtiar dan tawakkal, tapi rasanya ada yang "salah sambung". Antara niat baik dan hasil yang ada, ada jarak yang nggak jelas kenapa.</div>
+    <div class="pain-card"><strong>🤯 Lihat orang lain maju, diri sendiri stuck</strong>Bukan iri — tapi ada pertanyaan yang terus menggantung: "Kenapa mereka bisa, saya tidak?"</div>
+  </div>
+
+  <div class="ayat-block" style="margin-top:20px">
+    <div class="ayat-ar">إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ</div>
+    <div class="ayat-id">"Sesungguhnya Allah tidak mengubah keadaan suatu kaum sampai mereka mengubah keadaan yang ada pada diri mereka sendiri."</div>
+    <div class="ayat-src">QS. Ar-Ra'd: 11</div>
+  </div>
+
+  <p class="sec-body">Perubahan itu dimulai dari <strong style="color:var(--cream)">dalam</strong> — dari cara pikir. Bukan dari lebih keras bekerja atau lebih banyak berdoa saja.</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ WHAT YOU GET ══════════════════════ -->
+<section class="sec">
+  <div class="sec-eyebrow">🎯 Yang akan kamu bawa pulang</div>
+  <h2 class="sec-title">Bukan teori. <em>Tools yang bisa langsung dipakai</em> setelah kelas selesai.</h2>
+
+  <div class="what-list">
+    <div class="what-item">
+      <div class="what-icon">🔍</div>
+      <div>
+        <div class="what-title">Identifikasi Rezeki Blocker-mu Sendiri</div>
+        <div class="what-body">5 pola pikir paling umum yang secara tak sadar memblokir rezeki — dan kamu cek mana yang ada dalam dirimu.</div>
+      </div>
+    </div>
+    <div class="what-item">
+      <div class="what-icon">🧠</div>
+      <div>
+        <div class="what-title">Teknik NLP Reframing Qur'ani</div>
+        <div class="what-body">Ubah makna "rezeki sempit" menjadi "masa ujian menuju naik kelas" — secara teknis, bukan sekadar positif thinking.</div>
+      </div>
+    </div>
+    <div class="what-item">
+      <div class="what-icon">⚓</div>
+      <div>
+        <div class="what-title">Anchoring Kemakmuran</div>
+        <div class="what-body">Buat jangkar emosi "siap menerima" yang bisa dipanggil kapan saja — diperkuat dengan lafaz dzikir yang bermakna.</div>
+      </div>
+    </div>
+    <div class="what-item">
+      <div class="what-icon">🌅</div>
+      <div>
+        <div class="what-title">Rutinitas Harian Reprogramming</div>
+        <div class="what-body">Protokol pagi 10 menit berbasis sunnah yang memprogram ulang mindset kemakmuran setiap hari secara konsisten.</div>
+      </div>
+    </div>
+    <div class="what-item">
+      <div class="what-icon">🤝</div>
+      <div>
+        <div class="what-title">Cara Sinkronkan Ikhtiar & Tawakkal</div>
+        <div class="what-body">Formula yang sering salah dipahami — bukan pasrah, bukan juga anxious. Posisi yang tepat antara bergerak dan berserah.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ OUTLINE ══════════════════════════ -->
+<section class="sec sec-alt2">
+  <div class="sec-eyebrow">📋 Isi kelas 2 jam</div>
+  <h2 class="sec-title">Outline lengkap — <em>tidak ada yang tersembunyi</em></h2>
+
+  <div class="session-list">
+    <div class="session">
+      <div class="session-num">0</div>
+      <div>
+        <div class="session-time">0:00 – 0:15</div>
+        <div class="session-title">Pembuka: Kenapa Rezekimu Bisa Tersendat?</div>
+        <div class="session-body">Ice breaker, story hook seseorang yang berubah setelah ganti pola pikir, menetapkan harapan bersama.</div>
+      </div>
+    </div>
+    <div class="session">
+      <div class="session-num">1</div>
+      <div>
+        <div class="session-time">0:15 – 0:45</div>
+        <div class="session-title">Ilmu Pikiran & Rezeki dalam Islam</div>
+        <div class="session-body">Konsep rezeki dalam Al-Qur'an · Neuroplastisitas · Scarcity vs Abundance Mindset · Konsep Rizq dan pola pikir.</div>
+      </div>
+    </div>
+    <div class="session">
+      <div class="session-num">2</div>
+      <div>
+        <div class="session-time">0:45 – 1:20</div>
+        <div class="session-title">NLP untuk Membuka Blokir Rezeki</div>
+        <div class="session-body">Cartesian Questions · Reframing Qur'ani · Swish Pattern Islami · Future Pacing + Doa — semua dipraktikkan langsung.</div>
+      </div>
+    </div>
+    <div class="session">
+      <div class="session-num">3</div>
+      <div>
+        <div class="session-time">1:20 – 1:45</div>
+        <div class="session-title">Sedekah, Syukur & Anchoring Kemakmuran</div>
+        <div class="session-body">Psikologi syukur · Sedekah sebagai priming mental · Anchoring NLP + dzikir · Sinkronisasi ikhtiar dan tawakkal.</div>
+      </div>
+    </div>
+    <div class="session">
+      <div class="session-num">✓</div>
+      <div>
+        <div class="session-time">1:45 – 2:00</div>
+        <div class="session-title">Action Plan & Komitmen Bersama</div>
+        <div class="session-body">Self-assessment · Tantangan 7 hari · Komitmen publik · Preview program lanjutan · Closing doa bersama.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ TRAINER ══════════════════════════ -->
+<section class="sec">
+  <div class="sec-eyebrow">👨‍🏫 Siapa yang mengajar?</div>
+  <h2 class="sec-title">Trainer bersertifikat — bukan <em>sekadar konten kreator.</em></h2>
+
+  <div class="trainer-card">
+    <div class="trainer-avatar">🎓</div>
+    <div>
+      <div class="trainer-name">Rizky Fajar P</div>
+      <div class="trainer-cred">S.Psi., C.H., CT.NNLP</div>
+      <div class="trainer-bio">Praktisi Mental Health & Certified Trainer NLP. Membantu ratusan orang memahami dan mengubah pola pikir melalui pendekatan NLP, Psikologi, dan nilai-nilai Islam secara terintegrasi.</div>
+      <div class="badge-row">
+        <span class="badge">Certified NLP Trainer</span>
+        <span class="badge">S1 Psikologi</span>
+        <span class="badge">500+ Alumni</span>
+        <span class="badge">Jiwa yang Kokoh Series</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ TESTIMONIALS ══════════════════════ -->
+<section class="sec sec-alt">
+  <div class="sec-eyebrow">💬 Kata mereka yang sudah ikut</div>
+  <h2 class="sec-title">Bukan klaim kami. <em>Cerita mereka.</em></h2>
+
+  <div class="testi-list">
+    <div class="testi">
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">"Baru kali ini saya paham kenapa saya begitu keras pada diri sendiri soal finansial. Materinya sederhana tapi menenangkan dan langsung bisa dipraktikkan."</div>
+      <div class="testi-name">A.R.</div>
+      <div class="testi-sub">Ibu rumah tangga, Bekasi</div>
+    </div>
+    <div class="testi">
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">"Saya jadi sadar ternyata banyak pikiran negatif tentang uang yang selama ini saya anggap sebagai kebenaran. Teknik reframing yang diajarkan benar-benar mengubah cara saya melihat rezeki."</div>
+      <div class="testi-name">M.F.</div>
+      <div class="testi-sub">Freelancer, Jakarta</div>
+    </div>
+    <div class="testi">
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">"Pendekatan NLP dipadukan dengan psikologi dan nilai Islam membuat saya lebih mudah memahami diri sendiri. Ini beda dari kajian atau seminar motivasi biasa."</div>
+      <div class="testi-name">F.H.</div>
+      <div class="testi-sub">Karyawan swasta, Surabaya</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ PRICING ══════════════════════════ -->
+<section class="sec" id="pricing">
+  <div class="sec-eyebrow">💳 Investasi kamu</div>
+  <h2 class="sec-title">Nilai kelas ini <em>Rp 35.000.</em> Kali ini — bayar seikhlasnya.</h2>
+
+  <div class="urgency">
+    <div class="urgency-dot"></div>
+    <div style="font-size:12.5px"><strong style="color:var(--red)">Sisa kursi terbatas!</strong> Dari 100 kuota yang tersedia, sudah ada yang terisi. Daftar sekarang sebelum penuh.</div>
+  </div>
+
+  <div class="price-card">
+    <div class="price-tag">🌟 SPECIAL — BIAYA SUKARELA</div>
+    <div class="original-price">Nilai kelas: <span class="strike">Rp 35.000</span></div>
+    <div class="main-price">Sukarela</div>
+    <div class="price-note">Daftar gratis · Bayar seikhlasnya setelah kelas selesai<br>Rp 10.000, Rp 25.000, Rp 35.000 — atau apapun yang terasa pantas bagimu</div>
+
+    <div class="what-included">
+      <div class="included-item">Akses kelas WhatsApp Group 2 jam penuh</div>
+      <div class="included-item">Materi teks + voice note trainer langsung</div>
+      <div class="included-item">Sesi tanya jawab interaktif</div>
+      <div class="included-item">PDF ringkasan materi (dikirim setelah kelas)</div>
+      <div class="included-item">Workbook latihan refleksi pribadi</div>
+      <div class="included-item">Akses grup diskusi follow-up</div>
+    </div>
+
+    <a href="https://wa.me/6285600014111?text=Halo%20Kak%20Rizky%2C%20saya%20mau%20daftar%20Kuliah%20WA%20Topik%201%20-%20Rezeki%20%26%20Mindset%20tanggal%2017%20Juli%202026%20%F0%9F%99%8F" class="btn-wa">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#0A0800"/>
+        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.962-1.418A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="#0A0800" stroke-width="1.5" fill="none"/>
+      </svg>
+      Daftar Sekarang — Gratis!
+    </a>
+    <div class="btn-sub" style="margin-top:10px">✅ Konfirmasi dalam 5 menit · ✅ Tidak ada tagihan di muka</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ FAQ ══════════════════════════════ -->
+<section class="sec sec-alt2">
+  <div class="sec-eyebrow">❓ Yang sering ditanyakan</div>
+  <h2 class="sec-title">Pertanyaanmu sudah <em>ada jawabannya di sini.</em></h2>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Biaya sukarela itu maksudnya gimana?</div>
+      <div class="faq-a">Kamu daftar gratis sekarang dan ikut kelas dulu. Setelah kelas selesai, kalau kamu merasa materinya bernilai — kamu bisa transfer berapa pun yang terasa pantas bagimu. Rp 10.000, Rp 25.000, atau Rp 35.000 (harga normal). Tidak ada tekanan, tidak ada minimum. Kalau tidak ada manfaat yang kamu rasakan, tidak perlu transfer sama sekali.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Saya awam soal NLP — apakah ini cocok untuk saya?</div>
+      <div class="faq-a">Justru ini dirancang untuk orang yang belum pernah belajar NLP sama sekali. Semua teknik dijelaskan dari awal dalam bahasa yang mudah dipahami, dengan contoh yang sangat praktis dan bisa langsung dicoba. Tidak ada istilah teknis yang membingungkan tanpa penjelasan.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Format kelasnya seperti apa?</div>
+      <div class="faq-a">Kelas dilakukan di WhatsApp Group. Materi dikirim dalam bentuk teks terstruktur dan voice note dari trainer. Ada latihan langsung, sesi refleksi pribadi, dan sesi tanya jawab di akhir. Durasi total 2 jam, mulai jam 20.00 WIB.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Apakah ada rekaman kalau saya tidak bisa hadir tepat waktu?</div>
+      <div class="faq-a">Karena formatnya adalah teks dan voice note di WhatsApp Group, semua materi tetap bisa dibaca dan didengar kapan saja setelah dikirim. Kamu tidak akan ketinggalan materi meski bergabung sedikit terlambat — namun disarankan hadir dari awal untuk pengalaman terbaik.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Apakah ini bertentangan dengan ajaran Islam?</div>
+      <div class="faq-a">Tidak. NLP adalah alat untuk memahami dan mengubah pola pikir — alat yang netral. Dalam kelas ini, setiap teknik NLP dilandasi dan diperkuat dengan perspektif Al-Qur'an dan sunnah. Ayat-ayat tentang rezeki, tawakkal, dan syukur menjadi fondasi spiritual dari setiap latihan yang diajarkan.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Bagaimana cara daftar?</div>
+      <div class="faq-a">Klik tombol "Daftar via WhatsApp" di halaman ini. Kamu akan diarahkan ke chat WhatsApp dengan pesan otomatis. Trainer akan konfirmasi dalam 5 menit dan menambahkanmu ke grup kelas. Sesederhana itu.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ FINAL CTA ══════════════════════════ -->
+<section id="final-cta">
+  <div class="sec-eyebrow center">🚀 Terakhir sebelum kamu pergi</div>
+  <div class="final-headline">Rezekimu bisa bergerak. <em>Tapi kamu harus mulai dari dalam.</em></div>
+  <div class="final-sub">Jumat ini, 17 Juli 2026, jam 20.00 WIB — kita mulai bersama. Gratis daftar, bayar seikhlasnya setelah manfaat kamu rasakan sendiri.</div>
+
+  <a href="https://wa.me/6285600014111?text=Halo%20Kak%20Rizky%2C%20saya%20mau%20daftar%20Kuliah%20WA%20Topik%201%20-%20Rezeki%20%26%20Mindset%20tanggal%2017%20Juli%202026%20%F0%9F%99%8F" class="btn-wa">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#0A0800"/>
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.962-1.418A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="#0A0800" stroke-width="1.5" fill="none"/>
+    </svg>
+    Ya, Saya Mau Daftar Sekarang →
+  </a>
+  <p class="btn-sub" style="margin-top:10px">Sisa kuota terbatas · Konfirmasi 5 menit · Bayar sukarela setelah kelas</p>
+</section>
+
+<!-- ══ STICKY BOTTOM BAR ═══════════════ -->
+<div id="sticky">
+  <div class="sticky-inner">
+    <div class="sticky-text">
+      <div class="sticky-label">💰 Kuliah WA · 17 Juli 2026 · 20.00 WIB</div>
+      <div class="sticky-title">Rezeki & Mindset — Biaya Sukarela</div>
+    </div>
+    <a href="https://wa.me/6285600014111?text=Halo%20Kak%20Rizky%2C%20saya%20mau%20daftar%20Kuliah%20WA%20Topik%201%20-%20Rezeki%20%26%20Mindset%20tanggal%2017%20Juli%202026%20%F0%9F%99%8F" class="sticky-btn">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#0A0800"/>
+        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.962-1.418A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="#0A0800" stroke-width="1.5" fill="none"/>
+      </svg>
+      Daftar →
+    </a>
+  </div>
+</div>
+
+<script>
+// ── COUNTDOWN ────────────────────────────
+(function(){
+  // Target: Jumat 17 Juli 2026 20:00:00 WIB (UTC+7)
+  var target = new Date('2026-07-17T20:00:00+07:00').getTime();
+
+  function pad(n){ return String(n).padStart(2,'0'); }
+
+  function tick(){
+    var now = Date.now();
+    var diff = target - now;
+    if(diff <= 0){
+      document.getElementById('topbar').textContent = '🔴 Kelas sedang berlangsung — bergabung sekarang!';
+      ['cd-d','cd-h','cd-m','cd-s'].forEach(function(id){
+        document.getElementById(id).textContent = '00';
+      });
+      return;
+    }
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-d').textContent = pad(d);
+    document.getElementById('cd-h').textContent = pad(h);
+    document.getElementById('cd-m').textContent = pad(m);
+    document.getElementById('cd-s').textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+// ── FAQ TOGGLE ────────────────────────────
+function toggleFaq(el){
+  var item = el.closest('.faq-item');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+  if(!isOpen) item.classList.add('open');
+}
+
+// ── HIDE STICKY ON SCROLL UP ─────────────
+(function(){
+  var lastY = 0;
+  var sticky = document.getElementById('sticky');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    // always show sticky except when user scrolled past final CTA
+    var finalY = document.getElementById('final-cta').getBoundingClientRect().bottom + y;
+    sticky.style.display = y > finalY ? 'none' : 'block';
+    lastY = y;
+  }, {passive:true});
+})();
+
+// ── UTM LINK BUILDER (optional) ──────────
+(function(){
+  var wa = 'https://wa.me/6285600014111?text=Halo%20Kak%20Rizky%2C%20saya%20mau%20daftar%20Kuliah%20WA%20Topik%201%20-%20Rezeki%20%26%20Mindset%20tanggal%2017%20Juli%202026%20%F0%9F%99%8F';
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(a, i){
+    // track button position by adding source param to text
+    var sources = ['hero','pricing','final','sticky'];
+    var src = sources[Math.min(i, sources.length-1)];
+    // just ensure href is set correctly — no modification needed for basic use
+  });
+})();
+</script>
+</body>
+</html>
